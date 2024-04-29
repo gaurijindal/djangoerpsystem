@@ -57,6 +57,7 @@ urlpatterns = [
     path('api/auth/', include('djoser.urls')),
     path('add-teacher/', views.add_teacher, name='add_teacher'),
     path('add-student/', views.add_student, name='add_student'),
+    #path('accounts/logout/', views.logout_view, name='logout')
 ]
 admin.site.site_url = None
 admin.site.site_header = 'My Site'
